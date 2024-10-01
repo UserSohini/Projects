@@ -112,6 +112,9 @@ color: white;
     padding: 20px 30px;
     border-radius: 10px;
 }
+.coin:hover{
+    transform: translateY(-10px);
+}
 .coin img{
     width:70px;
 }
@@ -123,16 +126,24 @@ color: white;
 .calculate{
     margin-top: 2%;
     margin-left: 4%;
-    padding:30px;
 }
-
 .calculate img{
-    width: 100px;
+    width: 150px;
+    height:120px;
+    display: inline-block;
     cursor: alias;
+    padding:15px 10px;
+    border: 5px solid blue;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+}
+.calculate img:hover{
+    background-color: #a8e396e3
 }
 .calculate p{
     color: azure;
-    padding: 5px;
+    padding-left: 40px;
 }
 @media (max-width: 811px) { 
     /* Styles for smaller screens (tablets) */ 
