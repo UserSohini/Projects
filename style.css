@@ -1,0 +1,149 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+height: 100vh;
+width: 100%;
+background-image: url(images/newB.avif);
+background-position: center;
+background-size: cover;
+}
+.content{
+margin-top:12%;
+background-position: left top;
+color: #fff;
+}
+nav{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: none;
+}
+.pic img{
+width: 110px; 
+}
+
+nav ul{
+    flex:1;
+    list-style: none;
+    position: absolute;
+    top: 0; right: 0; 
+    padding-top: 30px  ;
+    padding-right: 20%;
+    border-radius:10px;
+}
+nav ul li{
+    margin:10px 20px;
+    float: inline-end;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+nav ul li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(227, 234, 240);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+nav ul li a:hover{
+    color: rgb(129, 207, 246);
+}
+nav a.btn{
+    color: rgb(227, 234, 240);
+    text-decoration: none;
+    border: 1px solid rgb(227, 234, 240);
+    padding: 10px 30px;
+    border-radius: 20px;
+    position: absolute;
+    top: 4%; 
+    right: 2%; 
+    background-color: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+nav a.btn:hover{
+background-color: rgb(179, 176, 176);
+color: white;
+}
+.content{
+    margin-top: 12px;
+    padding-left: 30px;
+}
+.content h1{
+    font-size: 50px;
+}
+.content h1 span{
+    color: #e49415;
+    animation: solo 3s linear infinite;
+}
+@keyframes solo{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.content p{
+    color: aqua;
+}
+.coin_list{
+    position:absolute;
+    left:1%;
+    bottom:20px;
+    display:flex;
+    align-items: center;
+}
+.coin{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin:15px;
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+.coin img{
+    width:70px;
+}
+.coin h3{
+    color: #fff;
+    margin-bottom: 5px;
+    padding-left: 18px;
+}
+.calculate{
+    margin-top: 2%;
+    margin-left: 4%;
+    padding:30px;
+}
+
+.calculate img{
+    width: 100px;
+    cursor: alias;
+}
+.calculate p{
+    color: azure;
+    padding: 5px;
+}
+@media (max-width: 811px) { 
+    /* Styles for smaller screens (tablets) */ 
+    .container{
+        background-size: 811px 641px; /* Stack navigation items vertically */
+    }
+    .content h1{
+        font-size: 40px;
+    }
+    .coin{
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+}
